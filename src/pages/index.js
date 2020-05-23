@@ -5,12 +5,13 @@ import Layout from "../components/layout"
 
 const Title = styled.h1`
   display: inline-block;
+  cursor: default;
 `
 
 const BlogTitle = styled.h3`
   margin-bottom: 20px;
   &:hover {
-    color: #1dcaff;
+    color: DarkCyan;
   }
 `
 
@@ -21,6 +22,14 @@ const BlogLink = styled(Link)`
 
 const BlogBody = styled.div`
   margin-bottom: 50px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  &:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.51);
+    transform: scale(1.03);
+    border-bottom: 2px solid DarkCyan;
+    cursor: default;
+  }
 `
 
 export default ({ data }) => {
